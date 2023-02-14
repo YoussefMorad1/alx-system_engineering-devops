@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -a -d | wc -l
+ls -a -d -mindepth 1 | wc -l
