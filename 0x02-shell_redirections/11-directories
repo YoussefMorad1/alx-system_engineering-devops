@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -lAR | grip -x -E d.* | wc -l 
+ls -lAR | grep -x -E d.* | wc -l 
