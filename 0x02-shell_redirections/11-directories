@@ -1,2 +1,2 @@
 #!/bin/bash
-(($(ls -l -d -A | wc -l) - 1))
+$(($(ls -l -d -A | wc -l) - 1)) | echo 
