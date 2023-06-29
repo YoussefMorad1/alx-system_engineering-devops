@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 # show clock all day
 hour=0
-while (($hour <= 12)); do
+while ((hour <= 12)); do
 	min=1;
 	echo Hour: $hour
-	while (($min <= 59)); do
+	while ((min <= 59)); do
 		echo $min;
 		((min++));
 	done
