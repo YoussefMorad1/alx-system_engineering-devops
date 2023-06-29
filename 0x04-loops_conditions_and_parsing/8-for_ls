@@ -1,16 +1,16 @@
 #!/usr/bin/env bash
 # display The content of the current directory
 lst=$(ls)
-for item in ${lst[@]}; do
+for item in $lst; do
 	for((i=0; i<${#item}; i++)); do
 		is_done=0
 		if [ "${item:i:1}" == "-" ]; then
-			echo ${item:i+1};
+			echo "${item:i+1}";
 			((is_done=1));
 			break;
 		fi
 	done;
 	if [ $is_done -eq 0 ]; then
-		echo $item;
+		echo "$item";
 	fi
 done
