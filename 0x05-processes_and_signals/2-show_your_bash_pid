@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 # test test
-"$(ps u -eH | grep bash)"
+ps u -eH | grep bash
 # shellcheck disable=SC2009
