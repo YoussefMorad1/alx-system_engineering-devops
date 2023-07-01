@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 # stop infinite script
-pid=$(pgrep infinity)
+pid="$(pgrep infinity)"
 kill "$pid"
