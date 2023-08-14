@@ -1,3 +1,0 @@
-#!/usr/bin/env bash
-# show ip
-ifconfig | grep -Eo 'inet(.*?)netmask' | cut -d ' ' -f 2
